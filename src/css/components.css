@@ -1,0 +1,154 @@
+:root {
+    --primary-color-4: #364FC7;
+    --primary-color-3: #4058CA;
+    --primary-color-2: #4A60CC;
+    --primary-color-1: #939EDF;
+
+    --grey-color-4: #212529;
+    --grey-color-3: #868E96;
+    --grey-color-2: #E9ECEF;
+    --grey-color-1: #F8F9FA;
+    --grey-color-0: #F5F5F5;
+
+    --white-color: #FFFFFF;
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;  /* Preferred icon size */
+    display: block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+  
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+  
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+  
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+  }
+
+.titleh1 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.titleh2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.titleh3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.paragraph, .button {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.caption {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.detail, .detail--bigscreen {
+    color: var(--grey-color-3);
+    font-size: 0.625rem;
+    font-weight: 400;
+}
+
+.button {
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--primary-color-4);
+    color: white;
+    padding: 0.656rem 0.938rem;
+    border: none;
+    border-radius: 8px;
+    height: max-content;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--primary-color-1);
+}
+
+.table-data {
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: #878787;
+}
+
+.table-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    background-color: var(--primary-color-3);
+    color: var(--white-color);
+    padding: 0.75rem 1.25rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.table-button--clicked {
+    background-color: var(--primary-color-2);
+}
+
+.icon {
+    pointer-events: none;
+}
+
+.icon--selected {
+    transform: rotate(180deg);
+}
+
+.input {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    border: none;
+    background-color: var(--grey-color-0);
+    color: var(--grey-color-4);
+}
+
+.input--container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: var(--grey-color-0);
+    padding: 0.719rem 0.938rem;
+    border-radius: 8px;
+}
+
+.input::placeholder {
+    color: #828282;
+    outline: none;
+    font-size: 0.875rem;
+    font-weight: 400;
+}
+
+.input:focus {
+    outline: none;
+}
+
+.input--container:focus-within {
+    outline: 2px solid var(--grey-color-4);
+}
