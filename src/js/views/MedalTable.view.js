@@ -52,4 +52,20 @@ export default class MedalTable {
             tableBody.append(tableRow)
         })
     }
+
+    static changeButtonVisualOnClick(button, icon) {
+        const allIcons = document.querySelectorAll('.icon')
+        const allButton = document.querySelectorAll('.table-button')
+        
+        allButton.forEach(button => {
+            button.classList.remove('table-button--clicked')
+        })
+
+        allIcons.forEach(icon => {
+            icon.classList.remove('icon--selected')
+        })
+
+        button.classList.add('table-button--clicked')
+        icon.classList.add('icon--selected')
+    }
 }

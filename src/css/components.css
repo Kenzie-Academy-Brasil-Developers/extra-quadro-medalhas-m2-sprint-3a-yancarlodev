@@ -111,6 +111,14 @@
     background-color: var(--primary-color-2);
 }
 
+.icon {
+    pointer-events: none;
+}
+
+.icon--selected {
+    transform: rotate(180deg);
+}
+
 .input {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
@@ -122,6 +130,9 @@
 }
 
 .input--container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     background-color: var(--grey-color-0);
     padding: 0.719rem 0.938rem;
     border-radius: 8px;
@@ -135,5 +146,9 @@
 }
 
 .input:focus {
-    outline: var(--grey-color-4);
+    outline: none;
+}
+
+.input--container:focus-within {
+    outline: 2px solid var(--grey-color-4);
 }

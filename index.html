@@ -26,12 +26,13 @@
                     <div class="search-container">
                         <label class="caption" for="pesquisa">Pesquisa</label>
                         <div class="input--container">
+                            <img src="./src/assets/icon/search-icon.svg" alt="Ícone de pesquisar">
                             <input class="input" type="text" name="pesquisa" id="search-input" placeholder="Pesquisar por país">
                         </div>
                     </div>
                     <p class="detail">Ex: Brasil</p>
 
-                    <button class="button" type="submit">Pesquisar</button>
+                    <button class="button" type="submit" id="search-button">Pesquisar</button>
                 </form>
                 <p class="detail--bigscreen">Ex: Brasil</p>
             </section>
@@ -41,27 +42,27 @@
                         <thead class="table__header">
                             <tr>
                                 <th>
-                                    <button class="table-button">Posição
-                                    <img src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
+                                    <button class="table-button table-button--clicked">Posição
+                                        <img class="icon icon--selected" src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
                                     </button>
                                 </th>
                                 <th class="table-title">País</th>
                                 <th>
                                     <button class="table-button">Ouro
-                                        <img src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
+                                        <img class="icon" src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
                                     </button>
                                 </th>
                                 <th>
                                     <button class="table-button">Prata
-                                        <img src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
+                                        <img class="icon" src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
                                     </button>
                                 </th>
                                 <th>
                                     <button class="table-button">Bronze
-                                        <img src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
+                                        <img class="icon" src="./src/assets/icon/arrow-icon.svg" alt="ícone de flecha">
                                     </button>
                                 </th>
-                                <th  class="table-title">Total</th>
+                                <th class="table-title">Total</th>
                             </tr>
                         </thead>
 
