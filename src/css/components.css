@@ -78,15 +78,18 @@
     border: none;
     border-radius: 8px;
     height: max-content;
+    cursor: pointer;
 }
 
 .button:hover {
     background-color: var(--primary-color-1);
 }
 
-.table-title {
+.table-data {
+    font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
+    color: #878787;
 }
 
 .table-button {
@@ -101,6 +104,7 @@
     padding: 0.75rem 1.25rem;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .table-button--clicked {

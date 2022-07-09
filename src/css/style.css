@@ -4,6 +4,25 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
+::-webkit-scrollbar {
+    height: 10px;
+    width: 5px;
+}
+  
+::-webkit-scrollbar-track {
+    background: var(--white-color);
+}
+  
+
+::-webkit-scrollbar-thumb {
+    background: var(--grey-color-2);
+}
+  
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--grey-color-3);
+}
+
 .header {
     display: flex;
     justify-content: center;
@@ -71,7 +90,20 @@ body {
     background-color: var(--grey-color-1);
 }
 
+.country-flag-container {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+.img-flag {
+    width: 28px;
+    height: 20px;
+    border-radius: 2px;
+}
+
 td {
+    height: 70px;
     border-right: 2px solid var(--grey-color-2);
 }
 
@@ -95,6 +127,10 @@ th:last-child {
 
 td, th {
     vertical-align: middle;
+}
+
+.arrow-icon--selected {
+    transform: rotate(180deg);
 }
 
 @media screen and (min-width: 768px) {

@@ -1,3 +1,4 @@
-import Api from "./models/Api.model.js"
+import MedalConstructor from "./models/MedalConstructor.model.js";
+import MedalTable from "./views/MedalTable.view.js";
 
-Api.getAllMedalsData()
+MedalTable.renderAllCompetitors(MedalConstructor.createCompetitors())
