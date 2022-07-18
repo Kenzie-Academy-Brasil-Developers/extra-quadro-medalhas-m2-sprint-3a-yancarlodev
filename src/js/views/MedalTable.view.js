@@ -60,7 +60,7 @@ export default class MedalTable {
         allButton.forEach(button => {
             button.classList.remove('table-button--clicked')
         })
-
+        
         allIcons.forEach(icon => {
             icon.classList.remove('icon--selected')
         })
